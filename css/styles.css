@@ -124,6 +124,7 @@ ul {
   margin-bottom: 40px;
 }
 .mob-list {
+  color: #2e2f42;
   font-size: 36px;
 font-family: Roboto;
 font-weight: 700;
@@ -153,7 +154,6 @@ text-transform: capitalize;
   color: #404bbf;
 }
 .current {
-  position: relative;
   color: #404bbf;
 }
 .current::after {

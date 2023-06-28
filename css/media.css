@@ -49,6 +49,9 @@
   .container {
     width: 768px;
   }
+  .current {
+    position: relative;
+  }
   .header-team,
   .header-address {
     display: flex;
@@ -157,12 +160,14 @@
     max-width: 530px;
   }
 }
+/* .modal {
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
+} */
 
-/* width: 95%;
-    max-width: 392px;
-    height: 95%;
-    max-height: 584px;
-    overflow: scroll; */
 
 .footer > .container {
   /* flex-wrap: wrap; */
