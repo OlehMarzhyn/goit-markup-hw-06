@@ -54,18 +54,18 @@
             </li>
           </ul>
         </address>
-        <button class="open-btn" type="button" js-open-menu>
+        <button class="open-btn js-open-menu" type="button">
           <svg class="modal-svg" width="32" height="22">
             <use
-              class="menu-close"
+              class="menu-open"
               href="./images/icons.svg#icon-menu-header"
             ></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu" .js-menu-container>
+      <div class="modal-mobile.is-open menu-container js-menu-container">
         <div>
-          <button class="close-btn" type="button" .js-close-menu>
+          <button class="close-btn js-close-menu" type="button">
             <svg class="menu-svg" width="8" height="8">
               <use
                 class="menu-close"
@@ -88,7 +88,7 @@
         <div>
           <ul class="header-adr-list list">
             <li class="mob-menu-tel">
-              <a href="tel:+110001111111" class="link header-adr"
+              <a href="tel:+110001111111" class="link mob-header-adr"
                 >+11 (000) 111-11-11
               </a>
             </li>
@@ -152,7 +152,7 @@
       </div>
     </header>
     <main>
-      <section class="section-team list">
+      <section class="section-team list section">
         <div class="container team-container">
           <h1 class="section-team-text">
             Effective Solutions for Your Business
@@ -163,7 +163,7 @@
         </div>
       </section>
       <!--About-->
-      <section class="section-about">
+      <section class="section-about section">
         <div class="container">
           <h2 class="visually-hidden">About</h2>
 
@@ -219,7 +219,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-question list">
+      <section class="section-question list section">
         <div class="container question-container">
           <h2 class="section-question-text">What are we doing</h2>
           <ul class="section-question-images link list">
@@ -235,13 +235,14 @@
           </ul>
         </div>
       </section>
-      <section class="section-people">
+      <section class="section-people section">
         <div class="container people-container">
           <h2 class="section-people-ourteam">Our Team</h2>
           <ul class="section-people-list list">
             <li class="section-list">
               <img
                 class="section-workteam"
+                srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -304,6 +305,7 @@
             <li class="section-list">
               <img
                 class="section-workteam"
+                srcset="./images/img-5.jpg 1x, ./images/img-5-2x.jpg 2x"
                 src="./images/img-5.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -366,6 +368,7 @@
             <li class="section-list">
               <img
                 class="section-workteam"
+                srcset="./images/img-6.jpg 1x, ./images/img-6-2x.jpg 2x"
                 src="./images/img-6.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -428,6 +431,7 @@
             <li class="section-list">
               <img
                 class="section-workteam"
+                srcset="./images/img-7.jpg 1x, ./images/img-7-2x.jpg 2x"
                 src="./images/img-7.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -490,7 +494,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-five">
+      <section class="section-five section">
         <div class="container">
           <h2 class="section-five-company">Customers</h2>
 

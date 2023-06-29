@@ -90,7 +90,18 @@ ul {
   border: none;
   margin-left: auto;
 }
+
+.modal-mobile {
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
+}
 .menu-close {
+
+}
+.menu-open {
 
 }
 .mob-menu {
@@ -105,6 +116,27 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #ffffff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
 .close-btn {
   border-color: #E7E9FC;
   display: block;
@@ -114,6 +146,10 @@ ul {
   margin-bottom: 32px;
   
 }
+/* .mob-header-adr {
+font-size: 36px;
+font-weight: 700;
+} */
 .mob-team {
 }
 .link {
@@ -259,7 +295,7 @@ letter-spacing: 0.4px;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -267,13 +303,22 @@ letter-spacing: 0.4px;
   margin: 0 auto;
   height: 600px;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-team {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-mob-2x.jpg);
+  }
+}
 .team-container {
 }
 
 .section-team-text {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
@@ -347,8 +392,8 @@ letter-spacing: 0.4px;
 /* SECTION-TWO-INDEX */
 
 .section-about {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 .section-about-list {
   display: flex;
@@ -382,7 +427,7 @@ letter-spacing: 0.4px;
 
 .section-about-text {
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -431,8 +476,8 @@ letter-spacing: 0.4px;
 
 .section-people {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
 }
 .section-people-name {
   font-size: 20px;
@@ -578,15 +623,7 @@ letter-spacing: 0.4px;
   color: var(--header-link);
 }
 
-.section-about-name {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
+
 
 /* SECTION-FIVE */
 
@@ -604,6 +641,7 @@ letter-spacing: 0.4px;
   /* flex-wrap: wrap; */
     /* max-width: 458px; */
     gap: 72px 16px;
+    display: flex;
 }
 .section-five-list {
   margin-bottom: 24px;
@@ -613,8 +651,8 @@ letter-spacing: 0.4px;
   height: 88px; */
 }
 .section-five-link {
-  width: 100%;
-  height: 100%;
+  width: 190px;
+  height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   display: flex;
@@ -644,7 +682,7 @@ letter-spacing: 0.4px;
   /* align-items: baseline; */
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   justify-items: center;
   gap: 72px;
 }
@@ -662,6 +700,8 @@ letter-spacing: 0.4px;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+  display: block;
+  text-align: center;
 }
 .footer-web {
   font-family: "Raleway", sans-serif;
@@ -685,6 +725,7 @@ letter-spacing: 0.4px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-soc);
+  text-align: center;
 }
 .footer-soc {
   font-weight: 500;
