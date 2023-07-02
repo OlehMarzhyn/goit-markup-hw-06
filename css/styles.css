@@ -70,8 +70,8 @@ ul {
 
 .header {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -653,7 +653,7 @@ color: #4d5ae5;
   text-align: center;
 }
 .section-five-item {
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   /* max-width: 458px; */
   gap: 72px 16px;
   display: flex;
@@ -733,7 +733,11 @@ color: #4d5ae5;
   color: var(--footer-text);
   max-width: 264px;
   margin: 0 auto;
+  /* margin-bottom: 72px; */
 }
+/* .footer-div {
+  margin-bottom: 72px;
+} */
 
 .footer-soc-div {
   font-weight: 500;

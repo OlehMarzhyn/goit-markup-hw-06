@@ -48,6 +48,12 @@
     overflow: scroll;
   }
 } */
+@media screen and (max-width: 767px) {
+  .footer-soc-div {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -70,6 +76,10 @@
   /* .header-list {
     color: var(--header-color);
   } */
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   .header-adr {
     font-size: 12px;
 font-family: Roboto;
@@ -122,7 +132,7 @@ letter-spacing: 0.04em;
   }
 
   .section-item {
-    width: 264px;
+    width: 356px;
   }
   .section-about-list {
     max-width: 736px;
@@ -266,6 +276,12 @@ width: 264px;
     flex-wrap: wrap;
     justify-content: center;
   }
+  /* .footer-div{
+    margin-bottom: 72px;
+  } */
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer > .container {
     flex-wrap: wrap;
     max-width: 530px;
